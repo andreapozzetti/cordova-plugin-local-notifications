@@ -95,5 +95,17 @@
         <source-file src="src/wp8/LocalNotification.cs" />
         <source-file src="src/wp8/Options.cs" />
     </platform>
+	
+    <!-- windows -->
+    <platform name="windows">
+        <config-file target="config.xml" parent="/*">
+            <feature name="LocalNotification">
+                <param name="wp-package" value="LocalNotification"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp8/LocalNotification.cs" />
+        <source-file src="src/wp8/Options.cs" />
+    </platform>
 
 </plugin>
